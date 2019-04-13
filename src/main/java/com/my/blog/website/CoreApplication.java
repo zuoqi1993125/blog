@@ -20,8 +20,7 @@ import javax.sql.DataSource;
 @MapperScan("com.my.blog.website.dao")
 @SpringBootApplication
 @EnableTransactionManagement
-public class CoreApplication extends SpringBootServletInitializer
-{
+public class CoreApplication extends SpringBootServletInitializer {
     @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
         return builder.sources(this.getClass());
